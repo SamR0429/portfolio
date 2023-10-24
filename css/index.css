@@ -1,0 +1,18 @@
+.row{
+    display: flex;
+}
+
+.column{
+    /*flex: 50%;*/
+    /*height: auto;*/
+}
+
+.intro-left{
+    text-align: center;
+    /*margin-top: 20rem;*/
+
+}
+
+.intro-right{
+    text-align: center;
+}
