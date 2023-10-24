@@ -16,3 +16,18 @@
 .intro-right{
     text-align: center;
 }
+
+.project-image {
+    max-width: 50%; /* Set a maximum width to maintain aspect ratio */
+    height: auto; /* Let the browser calculate the height while maintaining the aspect ratio */
+    display: block; /* Set the image as a block element */
+    margin: 0 auto;
+}
+
+.projects-container{
+    text-align: center;
+}
+
+.kyte-container, .adlister-container, .coffee-project-container{
+    margin: 25px;
+}
