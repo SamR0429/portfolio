@@ -1,16 +1,31 @@
+body{
+    overflow-x: hidden;
+}
+
 .row{
     display: flex;
 }
 
 .column{
-    /*flex: 50%;*/
+    flex: 50%;
     /*height: auto;*/
+}
+
+.intro-container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.testing{
+    height: 600px;
+    width: 1200px;
+    margin-left: 10rem;
+    /*margin-top: 10rem;*/
 }
 
 .intro-left{
     text-align: center;
     /*margin-top: 20rem;*/
-
 }
 
 .intro-right{
@@ -29,5 +44,6 @@
 }
 
 .kyte-container, .adlister-container, .coffee-project-container{
-    margin: 25px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
