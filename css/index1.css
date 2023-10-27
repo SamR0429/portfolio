@@ -203,18 +203,18 @@ nav ul li a:hover::after{
 }
 
 /*uncomment this when you get icons that work*/
-/*.layer a{*/
-/*    margin-top: 20px;*/
-/*    color: #ff004f;*/
-/*    text-decoration: none;*/
-/*    font-size: 18px;*/
-/*    line-height: 60px;*/
-/*    background: white;*/
-/*    width: 60px;*/
-/*    height: 60px;*/
-/*    border-radius: 50%;*/
-/*    text-align: center;*/
-/*}*/
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
 
 .work:hover img{
    transform: scale(1.1);
@@ -250,10 +250,87 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 
+.contact-left-column p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
 .contact-right-column{
     flex-basis: 60%;
 }
 
+.contact-right-column form{
+    width: 100%;
+}
 
+form input, form textarea{
+    width: 100%;
+    border: 0px;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
 
+form .submit-btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+/*.social-icons a{*/
+/*    text-decoration: none;*/
+/*    margin-right: 15px;*/
+/*    font-size: 30px;*/
+/*    color: #ababab;*/
+/*    display: inline-block;*/
+/*    transition: transform 0.5s;*/
+/*}*/
+
+/*.social-icons a:hover{*/
+/*    color: #ff004f;*/
+/*    transform: translateY(-5px);*/
+/*}*/
+
+.bi{
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 30px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.bi:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.resume-btn{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.btn.submit-btn{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
 
