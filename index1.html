@@ -56,6 +56,70 @@
                     <li><span>2023</span><br>Web Development Cert. from Codeup</li>
                 </ul>
             </div>
+
+<!--            work portion-->
+
+            <div class="portfolio">
+            <div class="container">
+                <h1 class="subtitle">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="file-path">
+                        <div class="layer">
+                            <h3>Kyte Rescue</h3>
+                            <p>description goes here</p>
+                            <a href="https://www.kyterescue.com/"> visit kyte rescue!</a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="file-path">
+                        <div class="layer">
+                            <h3>Ad-Lister</h3>
+                            <p>description goes here</p>
+                            <a href="https://github.com/ent-adlister-team-1/adlister">checkout adlister</a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="file-path">
+                        <div class="layer">
+                            <h3>Coffee Project</h3>
+                            <p>description goes here</p>
+                            <a href="https://github.com/arusa-sam-coffeeProject/arusa-sam-coffeeProject">checkout coffee project</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/SamR0429?tab=repositories" class="btn">See more</a>
+            </div>
+            </div>
+
+<!--contact info-->
+            <div class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left-column">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p>an icon goes infront of your email : Samanatha.ramos01@gmail.com</p>
+                            <p>(210)994-1786</p>
+                            <div class="social-icons"></div>
+                            <a href="https://github.com/SamR0429">github icon</a>
+                            <a href="https://www.linkedin.com/in/samantha-ramos99/">linkedin icon</a>
+                            <a href="https://alumni.codeup.com/candidate/samantha-ramos/">codeup icon</a>
+                        </div>
+                        <div class="contact-right-column">
+                            <form>
+                                <input type="text" name="Name" placeholder="Your name" required>
+                                <input type="email" name="Email" placeholder="Your email" required>
+                                <textarea name="Message" rows="6" placeholder="Your message" required></textarea>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </div>
@@ -74,7 +138,7 @@
             tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+        document.querySelector(tabname).classList.add("active-tab");
     }
 
 
