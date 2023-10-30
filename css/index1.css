@@ -151,6 +151,49 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+/*services section*/
+
+.services{
+    padding: 30px 0;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+.services-icons{
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+
+}
+
 
 /*portfolio section*/
 
@@ -304,7 +347,7 @@ form .submit-btn{
 .bi{
     text-decoration: none;
     margin-right: 15px;
-    font-size: 30px;
+    /*font-size: 30px;*/
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
@@ -325,7 +368,7 @@ form .submit-btn{
     background: #ff004f;
 }
 
-.copyright{
+.footer{
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -334,3 +377,16 @@ form .submit-btn{
     margin-top: 20px;
 }
 
+
+
+
+
+
+
+/*media queries*/
+
+/*@media only screen and (max-width: 600px){*/
+/*    .header{*/
+/*        !*background-image: url("the file path here");*!*/
+/*    }*/
+/*}*/
