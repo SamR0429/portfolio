@@ -15,12 +15,19 @@
         <nav>
             <!--            <img src="file-path-goes-here" class="logo">-->
             <h1>SR.</h1>
-            <ul>
+            <ul class="side-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="menu-icons bi-x" viewBox="0 0 16 16" onclick="closemenu()" >
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
             </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="menu-icons bi-list" viewBox="0 0 16 16" onclick="openmenu()" >
+                <path fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
         </nav>
 
         <div class="header-text">
@@ -36,7 +43,7 @@
         <div class="row">
             <div class="about-column">
                 <!--            need to fix this picture somehow-->
-                            <img src="img/55F616D7-D960-4D0F-BE3D-A7CB38008E56_1_105_c.jpg">
+                <img src="img/55F616D7-D960-4D0F-BE3D-A7CB38008E56_1_105_c.jpg">
             </div>
             <div class="about-column-2">
                 <h1 class="subtitle">About Me</h1>
@@ -74,28 +81,37 @@
         <div class="services-list">
 
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="services-icons bi bi-code-slash" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                     class="services-icons bi bi-code-slash" viewBox="0 0 16 16">
                     <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
                 </svg>
                 <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate debitis eum ipsum itaque nobis perferendis praesentium qui similique temporibus. Aliquid aut fugit impedit laudantium officia praesentium rem sapiente, ut.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate debitis eum ipsum
+                    itaque nobis perferendis praesentium qui similique temporibus. Aliquid aut fugit impedit laudantium
+                    officia praesentium rem sapiente, ut.</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="services-icons bi bi-crop" viewBox="0 0 16 16">
-                <path d="M3.5.5A.5.5 0 0 1 4 1v13h13a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2H3.5a.5.5 0 0 1-.5-.5V4H1a.5.5 0 0 1 0-1h2V1a.5.5 0 0 1 .5-.5zm2.5 3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4H6.5a.5.5 0 0 1-.5-.5z"/>
-            </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                     class="services-icons bi bi-crop" viewBox="0 0 16 16">
+                    <path d="M3.5.5A.5.5 0 0 1 4 1v13h13a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2H3.5a.5.5 0 0 1-.5-.5V4H1a.5.5 0 0 1 0-1h2V1a.5.5 0 0 1 .5-.5zm2.5 3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4H6.5a.5.5 0 0 1-.5-.5z"/>
+                </svg>
                 <h2>UI/UX Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate debitis eum ipsum itaque nobis perferendis praesentium qui similique temporibus. Aliquid aut fugit impedit laudantium officia praesentium rem sapiente, ut.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate debitis eum ipsum
+                    itaque nobis perferendis praesentium qui similique temporibus. Aliquid aut fugit impedit laudantium
+                    officia praesentium rem sapiente, ut.</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="services-icons bi bi-window" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                     class="services-icons bi bi-window" viewBox="0 0 16 16">
                     <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
                     <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
                 </svg>
                 <h2>Full Web Application</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate debitis eum ipsum itaque nobis perferendis praesentium qui similique temporibus. Aliquid aut fugit impedit laudantium officia praesentium rem sapiente, ut.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate debitis eum ipsum
+                    itaque nobis perferendis praesentium qui similique temporibus. Aliquid aut fugit impedit laudantium
+                    officia praesentium rem sapiente, ut.</p>
                 <a href="#">Learn more</a>
             </div>
         </div>
@@ -240,6 +256,19 @@
         // document.querySelectorAll(tabname)
     }
 
+
+</script>
+
+<script>
+    let sidemenu = document.querySelector(".side-menu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
 
 </script>
 </body>

@@ -60,6 +60,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+nav .menu-icons{
+    display: none;
+}
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -379,16 +383,42 @@ form .submit-btn{
     margin-top: 20px;
 }
 
-
-
-
-
-
-
 /*media queries*/
 
-/*@media only screen and (max-width: 600px){*/
-/*    .header{*/
-/*        !*background-image: url("the file path here");*!*/
-/*    }*/
-/*}*/
+@media only screen and (max-width: 600px){
+    .header{
+        /*background-image: url("the file path here");*/
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .menu-icons{
+        display: block;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .menu-icons{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
