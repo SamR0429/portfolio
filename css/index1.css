@@ -408,6 +408,7 @@ form .submit-btn{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.5s;
     }
 
     nav ul li{
@@ -420,5 +421,24 @@ form .submit-btn{
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-column, .about-column-2{
+        flex-basis: 100%;
+    }
+    .about-column{
+        margin-bottom:30px;
+    }
+    .about-column-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left-column, .contact-right-column{
+        flex-basis: 100%;
     }
 }
