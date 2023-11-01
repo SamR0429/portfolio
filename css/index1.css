@@ -179,6 +179,7 @@ nav .menu-icons{
     grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    margin-bottom: 80px;
 }
 
 .services-list div{
@@ -348,6 +349,7 @@ form .submit-btn{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+    font-family: Taviraj , "sans-serif";
 }
 
 .social-icons{
