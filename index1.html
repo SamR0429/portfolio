@@ -24,12 +24,12 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                     class="menu-icons bi-x" viewBox="0 0 16 16" onclick="closemenu()">
+                     class="menu-icons bi-x closemenu" viewBox="0 0 16 16" >
                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                 </svg>
             </ul>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                 class="menu-icons bi-list" viewBox="0 0 16 16" onclick="openmenu()">
+                 class="menu-icons bi-list openmenu" viewBox="0 0 16 16" >
                 <path fill-rule="evenodd"
                       d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
@@ -48,7 +48,7 @@
         <div class="row">
             <div class="about-column">
                 <!--            need to fix this picture somehow-->
-                <img src="img/55F616D7-D960-4D0F-BE3D-A7CB38008E56_1_105_c.jpg">
+                <img src="img/protrait.jpg">
             </div>
             <div class="about-column-2">
                 <h1 class="subtitle">About Me</h1>
@@ -59,7 +59,7 @@
                     success. My passion for what I do drives me to go the extra mile and deliver great results. I take
                     pride in my adaptability, problem-solving skills, and the ability to work effectively under
                     pressure. With a relentless pursuit of improvement, I aim not only to meet but to exceed
-                    expectations, making me an asset to any team and project.</p>
+                    expectations.</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -255,6 +255,7 @@
 </div>
 <div class="footer">
 </div>
+<script src="js/index1.js"></script>
 
 
 <script>
@@ -275,18 +276,18 @@
 
 </script>
 
-<script>
-    let sidemenu = document.querySelector(".side-menu");
+<!--<script>-->
+<!--    let sidemenu = document.querySelector(".side-menu");-->
 
-    function openmenu() {
-        sidemenu.style.right = "0";
-    }
+<!--    function openmenu() {-->
+<!--        sidemenu.style.right = "0";-->
+<!--    }-->
 
-    function closemenu() {
-        sidemenu.style.right = "-200px";
-    }
+<!--    function closemenu() {-->
+<!--        sidemenu.style.right = "-200px";-->
+<!--    }-->
 
-</script>
+<!--</script>-->
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxZZezLk5FYQNv4BOjT0Mdxgv3XsETDKiBMI7tphpVYPdNZvyQiFMspZX6A3lNSXIgf/exec'
     const form = document.forms['submit-to-google-sheet']
