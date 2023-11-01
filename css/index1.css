@@ -326,7 +326,12 @@ nav .menu-icons{
     width: 100%;
 }
 
+.contact-options{
+    font-size: 20px;
+}
+
 form input, form textarea{
+    font-family: Taviraj , "sans-serif";
     width: 100%;
     border: 0px;
     outline: none;
@@ -352,7 +357,6 @@ form .submit-btn{
 .bi{
     text-decoration: none;
     margin-right: 15px;
-    /*font-size: 30px;*/
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
