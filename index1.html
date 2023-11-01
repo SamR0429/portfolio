@@ -50,11 +50,7 @@
             </div>
             <div class="about-column-2">
                 <h1 class="subtitle">About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores debitis dolorem
-                    earum eligendi exercitationem, harum itaque iure, laborum magnam mollitia nam, neque officiis
-                    pariatur placeat quisquam sunt. Assumenda, repellendus.Ab distinctio dolore quaerat. Aut iure minus
-                    optio recusandae. At delectus, dolor dolore dolorem eius esse hic iste libero minus mollitia
-                    nesciunt odio omnis perferendis quis reiciendis rerum tenetur vel!</p>
+                <p class="about-me-paragraph">I'm a dedicated and hardworking professional who is committed to getting the job done. I thrive on challenges and am always eager to learn and explore new developments in the field, as I believe that staying up-to-date is crucial in a rapidly evolving industry. Collaborative by nature, I value teamwork and believe that synergy within a group is the key to success. My passion for what I do drives me to go the extra mile and deliver great results. I take pride in my adaptability, problem-solving skills, and the ability to work effectively under pressure. With a relentless pursuit of improvement, I aim not only to meet but to exceed expectations, making me an asset to any team and project.</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -65,8 +61,7 @@
                     <ul>
                         <li><span>UI/UX</span><br>Design Website/App Interface</li>
                         <li><span>Web Development</span><br>Full Website/App Development</li>
-                        <li><span>Languages</span><br>Java, Spring MVC, Spring Boot, Hibernate, HTML, CSS, jQuery, JavaScript & Bootstrap</li>
-                        <li><span>Technologies</span><br>Git, Thymeleaf, Object Oriented Programming, MySQL, Apache Tomcat, Maven, J2EE, REST APIs</li>
+                        <li><span>Languages/Technologies</span><br>Java, Spring MVC, Spring Boot, Hibernate, HTML, CSS, jQuery, JavaScript, Bootstrap, Git, Thymeleaf, Object Oriented Programming, MySQL, Apache Tomcat, Maven, J2EE, REST APIs</li>
                         <li><span>Exposure To</span><br>Spring Framework and JUnit Testing</li>
                     </ul>
                 </div>
@@ -92,9 +87,7 @@
                     <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
                 </svg>
                 <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate debitis eum ipsum
-                    itaque nobis perferendis praesentium qui similique temporibus. Aliquid aut fugit impedit laudantium
-                    officia praesentium rem sapiente, ut.</p>
+                <p>I provide comprehensive web design services that bring your vision to life, delivering visually stunning, user-friendly websites that leave a lasting impression, with a special emphasis on responsiveness and accessibility for all users.</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
@@ -231,12 +224,13 @@
             <div class="contact-right-column">
                 <a href="img/Samantha-Ramos_Resume%20copy.pdf" download class="btn resume-btn">Download
                     resume</a>
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your name" required>
                     <input type="email" name="Email" placeholder="Your email" required>
                     <textarea name="Message" rows="6" placeholder="Your message" required></textarea>
                     <button type="submit" class="btn submit-btn">Submit</button>
                 </form>
+                <span id="msg">hello</span>
             </div>
 
         </div>
@@ -276,6 +270,17 @@
         sidemenu.style.right = "-200px";
     }
 
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxZZezLk5FYQNv4BOjT0Mdxgv3XsETDKiBMI7tphpVYPdNZvyQiFMspZX6A3lNSXIgf/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
 </script>
 </body>
 </html>
