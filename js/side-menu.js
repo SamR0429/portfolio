@@ -1,5 +1,4 @@
 
-
 const sidemenu = document.querySelector(".side-menu");
 const openMenuButton = document.querySelector(".openmenu");
 const closeMenuButton = document.querySelector(".closemenu");

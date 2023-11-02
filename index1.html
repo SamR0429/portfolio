@@ -10,12 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@300;400;500&display=swap" rel="stylesheet">
-
 </head>
 <body>
 <div id="header">
     <div class="container">
-        <!--            <img src="file-path-goes-here" class="logo">-->
         <nav>
             <h1>SR.</h1>
             <ul class="side-menu">
@@ -37,6 +35,7 @@
         </nav>
 
         <div class="header-text">
+<!--            <img src="img/cropped-me.png" class="me">-->
             <p>Full Stack Web Developer</p>
             <h1>Hi, I'm <span>Samantha</span> Ramos<br>from Texas</h1>
         </div>
@@ -258,24 +257,24 @@
 </div>
 <script src="js/side-menu.js"></script>
 <script src="js/google-sheet.js"></script>
+<script src="js/about-me-tabs.js"></script>
+<!--<script>-->
+<!--    let tablinks = document.querySelectorAll(".tab-links");-->
+<!--    let tabcontents = document.querySelectorAll(".tab-contents");-->
 
-<script>
-    let tablinks = document.querySelectorAll(".tab-links");
-    let tabcontents = document.querySelectorAll(".tab-contents");
-
-    function opentab(tabname) {
-        for (tablink of tablinks) {
-            tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.querySelector(tabname).classList.add("active-tab");
-    }
+<!--    function opentab(tabname) {-->
+<!--        for (tablink of tablinks) {-->
+<!--            tablink.classList.remove("active-link");-->
+<!--        }-->
+<!--        for (tabcontent of tabcontents) {-->
+<!--            tabcontent.classList.remove("active-tab");-->
+<!--        }-->
+<!--        event.currentTarget.classList.add("active-link");-->
+<!--        document.querySelector(tabname).classList.add("active-tab");-->
+<!--    }-->
 
 
-</script>
+<!--</script>-->
 
 <!--<script>-->
 <!--    let sidemenu = document.querySelector(".side-menu");-->
