@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@300;400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <div id="header">
@@ -207,14 +208,14 @@
                     </svg>
                     Samanatha.ramos01@gmail.com
                 </p>
-                <p class="contact-options">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                         class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                    </svg>
-                    (210) 994-1786
-                </p>
+<!--                <p class="contact-options">-->
+<!--                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"-->
+<!--                         class="bi bi-telephone-fill" viewBox="0 0 16 16">-->
+<!--                        <path fill-rule="evenodd"-->
+<!--                              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>-->
+<!--                    </svg>-->
+<!--                    (210) 994-1786-->
+<!--                </p>-->
                 <div class="social-icons"></div>
                 <a href="https://github.com/SamR0429">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -255,8 +256,8 @@
 </div>
 <div class="footer">
 </div>
-<script src="js/index1.js"></script>
-
+<script src="js/side-menu.js"></script>
+<script src="js/google-sheet.js"></script>
 
 <script>
     let tablinks = document.querySelectorAll(".tab-links");
@@ -288,23 +289,23 @@
 <!--    }-->
 
 <!--</script>-->
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxZZezLk5FYQNv4BOjT0Mdxgv3XsETDKiBMI7tphpVYPdNZvyQiFMspZX6A3lNSXIgf/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+<!--<script>-->
+<!--    const scriptURL = 'https://script.google.com/macros/s/AKfycbxZZezLk5FYQNv4BOjT0Mdxgv3XsETDKiBMI7tphpVYPdNZvyQiFMspZX6A3lNSXIgf/exec'-->
+<!--    const form = document.forms['submit-to-google-sheet']-->
+<!--    const msg = document.getElementById("msg")-->
 
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, {method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function () {
-                    msg.innerHTML = ""
-                }, 5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-    })
-</script>
+<!--    form.addEventListener('submit', e => {-->
+<!--        e.preventDefault()-->
+<!--        fetch(scriptURL, {method: 'POST', body: new FormData(form)})-->
+<!--            .then(response => {-->
+<!--                msg.innerHTML = "Message sent successfully"-->
+<!--                setTimeout(function () {-->
+<!--                    msg.innerHTML = ""-->
+<!--                }, 5000)-->
+<!--                form.reset()-->
+<!--            })-->
+<!--            .catch(error => console.error('Error!', error.message))-->
+<!--    })-->
+<!--</script>-->
 </body>
 </html>

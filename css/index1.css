@@ -434,6 +434,9 @@ form .submit-btn{
         left: 25px;
         cursor: pointer;
     }
+    .bi-list{
+        cursor:pointer;
+    }
     .subtitle{
         font-size: 40px;
     }
