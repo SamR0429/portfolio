@@ -17,9 +17,23 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url("img/cropped-me.png");
+    /*background-image: url("img/cropped-me.png");*/
     /*background-size: cover; !*find out what this does too*!*/
     /*background-position: center; !*check this out too*!*/
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text span{
+    color: #ff004f;
 }
 
 .container{
@@ -70,19 +84,6 @@ nav .menu-icons{
     display: none;
 }
 
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
-}
-
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
-
-.header-text span{
-    color: #ff004f;
-}
 
 /*about me section*/
 
@@ -420,9 +421,9 @@ form .submit-btn{
 /*media queries*/
 
 @media only screen and (max-width: 600px){
-    #header{
-        /*background-image: url("the file path here");*/
-    }
+    /*#header{*/
+    /*    !*background-image: url("the file path here");*!*/
+    /*}*/
     .header-text{
         margin-top: 100%;
         font-size: 16px;
